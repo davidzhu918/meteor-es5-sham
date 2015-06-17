@@ -11,12 +11,11 @@ Package.describe({
 });
 
 Package.onUse(function(api) {
-  api.versionsFrom('1.1.0.2');
   api.addFiles('es5-sham.js', ['client', 'server']);
 });
 
 Package.onTest(function(api) {
   api.use('tinytest');
-  api.use('davidzhu019:es5-sham');
+  api.use('davidzhu918:es5-sham');
   api.addFiles('es5-sham-tests.js');
 });
